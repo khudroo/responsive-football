@@ -1,0 +1,382 @@
+/* ================================
+Common CSS
+================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    width: 1050px;
+    margin: 0 auto;
+}
+.btn{
+    padding: 15px 40px;
+    color: white;
+    background-color: rgb(118, 0, 253);
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 16px;
+    font-weight: 700;
+}
+.btn i{
+    margin-left: 10px;
+}
+.btn:hover{
+    background-color: rgb(165, 87, 255);
+}
+
+/* ================================
+Header Style
+================================== */
+header{
+    width: 1440px;
+    max-width: 100%;
+    background-color: #2D25A0;
+}
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    list-style: none;
+    cursor: pointer;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 20px;
+    transition: 0.3s;
+    
+}
+.menu li a:hover{
+    background-color: blueviolet ;
+}
+.login_btn .btn{
+    margin-top: 0px;
+    font-size: 18px;
+}
+.login_btn i{
+    margin-right: 5px;
+}
+/* ================================
+hero_area Style
+================================== */
+
+.hero_area{
+    display: flex;
+}
+.hero_content {
+    width: 515px;
+    height: 439px;
+    margin-top: 48px;
+}
+.hero_content h1{
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+    line-height: 80px;
+    margin: 20px 0px;
+}
+
+.hero_right img {
+    width: 85%;
+    margin-left: 70px;
+    transition: .5s;
+    transform-origin: center;
+    cursor: pointer;
+}
+.hero_right img:hover{
+    width: 90%;
+}
+
+
+/* ================================
+main Style
+================================== */
+
+main{
+    background-color: #FEFEFE;
+    width: 1440px;
+    max-width: 100%;
+}
+.blog_section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: auto;
+    margin: 50px 0;
+    grid-gap: 30px;
+}
+
+.blog_details{
+    width: 330px;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgb(214, 214, 214);
+    padding: 16px;
+    border-radius: 5px;
+}
+.blog_cover img{
+    width: 300px;
+}
+
+.blog_info h3{
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+    margin: 15px 0px;
+}
+.blog_info p{
+    color: #6C6C6C;
+    font-size: 16px;
+}
+
+/* ================================
+section_post Style
+================================== */
+
+.recent_news h2{
+    text-align: center;
+    font-size: 50px;
+    color: blueviolet;
+    padding: 10px 0px;
+}
+.section_post{
+    background-color: #FEFEFE;
+    width: 1440px;
+    max-width: 100%;
+    margin: 70px 0px;
+
+}
+
+.recent_post_section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: auto;
+    grid-gap: 20px;
+    
+}
+.recent_post_item{
+    background-color: #fff;
+    box-shadow: 0 0 40px rgb(214, 214, 214);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.post_img img {
+    border-radius: 10px;
+}
+.post_by{
+    color: blueviolet;
+    font-size: 14px;
+}
+.post_info h3 {
+    margin: 10px 0px;
+}
+
+
+/* ================================
+winner_section Style
+================================== */
+
+.winner_section {
+    margin: 0 auto;
+    text-align: center;
+}
+.winner_bg{
+    background: linear-gradient(rgba(2, 2, 2, 0.7),rgba(0,0,0,0.5)), url(img/winner_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0 ;
+}
+
+.winner_section h2{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+}
+.winner_section p{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.winner_section .btn{
+    text-align: center;
+}
+
+
+
+/* ================================
+footer Style
+================================== */
+
+footer{
+    margin: 70px 0px;
+    background-color: #FEFEFE;
+    width: 1440px;
+    max-width: 100%
+}
+.footer_area{
+    text-align: center;
+    margin: 0 auto;
+}
+.footer_logo img{
+    width: 400px;
+}
+.social_link i{
+    padding: 12px 19px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.social_link i:hover{
+    background: #cacaca;
+}
+.social_link {
+    margin-bottom: 20px;
+}
+
+
+/* ================ Style End ============ */
+
+
+
+
+/* Responsive Design --------------
+   Media Query--------------------- */
+
+/* ================================
+Tablet Devices
+================================== */
+
+
+@media only screen and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    /* header  */
+    .menu li a {
+        font-size: 14px;
+        padding: 4px 14px;
+    }
+    .login_btn .btn {
+        margin-top: 0px;
+        font-size: 14px;
+    }
+    .btn {
+        margin-right: 20px;
+    }
+    .hero_content {
+        padding: 18px;
+    }
+    .hero_right img {
+        width: 93%;
+        margin-left: 15px;
+        margin-top: 90px;
+    }
+/* blog_section Style*/
+
+    .blog_section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .recent_post_section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .winner_section p {
+        padding: 45px;
+    }
+}
+
+
+
+/* ================================
+Mobile Devices 
+================================== */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    /* header  */
+    .header_top {
+        padding: 30px 15px;
+    }
+    .menu {
+        display: block;
+    }
+
+    .hero_area{
+        padding: 10px 20px;
+        display: grid;
+    }
+    .hero_content {
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+    .hero_right {
+        width: 100%;
+        display: block;
+        margin-top: 50px;
+    }
+    /* Blog */
+    .blog_section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog_cover img {
+        width: 100%;
+        padding: 10px;
+    }
+    .blog_info {
+        padding: 20px;
+    }
+    .blog_details {
+        width: 100%;
+    }
+    /* recent_post_section */
+    .recent_post_section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* winner_section */
+    .winner_section h2 {
+        font-size: 30px;
+        margin: 40px;
+    }
+    .winner_section p {
+        font-size: 16px;
+        margin-bottom: 30px;
+        width: 70%;
+        margin: 0 auto;
+    }
+}
